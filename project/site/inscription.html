@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join The Bloodline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-pages.css">
+  <script src="script.js" defer></script>
+  <script src="registration.js" defer></script>
+</head>
+<body class="form-page">
+  <div class="gold-line"></div>
+  <header class="header">
+    <a class="brand" href="index.html"><span class="brand-icon">B</span><span>THE <b>BLOODLINE</b><small>ACKNOWLEDGE THE CHIEF</small></span></a>
+    <a class="nav-join" href="index.html">← BACK TO HOME</a>
+  </header>
+  <main class="form-layout">
+    <section class="form-photo">
+      <img src="otc.jpg" alt="Roman Reigns and Paul Heyman">
+      <div class="form-photo-shade"></div>
+      <div class="form-photo-text"><p class="eyebrow">THE TABLE IS WAITING</p><h1>YOUR<br><em>FAMILY.</em><br>YOUR<br>LEGACY.</h1><small>ACKNOWLEDGE THE TRIBAL CHIEF</small></div>
+    </section>
+    <section class="form-panel">
+      <div class="section-label">THE BLOODLINE / OFFICIAL FAN ROLL CALL</div>
+      <h2>TAKE YOUR<br><em>PLACE.</em></h2>
+      <p class="form-intro">Enter your details and join the fan roll call. Once you join, this registration page will be locked for your current browser session.</p>
+      <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+      <form id="registrationForm" novalidate>
+        <label for="fan_name">YOUR NAME</label>
+        <input id="fan_name" name="fan_name" type="text" maxlength="60" minlength="2" placeholder="Enter your name" required>
+        <label for="email">EMAIL ADDRESS</label>
+        <input id="email" name="email" type="email" maxlength="120" placeholder="you@example.com" required>
+        <label for="favorite">YOUR FAVOURITE MEMBER</label>
+        <select id="favorite" name="favorite" required>
+          <option value="">Choose your member</option><option>Roman Reigns</option><option>Jey Uso</option><option>Jimmy Uso</option><option>Solo Sikoa</option><option>Paul Heyman</option>
+        </select>
+        <label class="agree"><input type="checkbox" name="acknowledge" value="1" required><span>I acknowledge the Tribal Chief and agree to join this fan list.</span></label>
+        <button class="btn-gold form-submit" type="submit">JOIN THE BLOODLINE <b>↗</b></button>
+        <p class="privacy-note">Fan-made tribute only. Your registration is saved securely in an online database.</p>
+      </form>
+      <a class="back-link" href="index.html">← RETURN TO THE BLOODLINE</a>
+    </section>
+  </main>
+</body>
+</html>
